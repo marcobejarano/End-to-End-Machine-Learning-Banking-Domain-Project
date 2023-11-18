@@ -1,0 +1,56 @@
+// Create the environment and install the packages
+(base) PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml> New-Item -ItemType Directory End-to-End-Machine-Learning-Banking-Domain-Project
+
+
+    Directorio: C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        17/11/2023     12:15                End-to-End-Machine-Learning-Banking-Domain-Project
+
+
+(base) PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml> cd .\End-to-End-Machine-Learning-Banking-Domain-Project\
+(base) PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> conda create -n End-to-End-Machine-Learning-Banking-Domain-Project numpy pandas matplotlib seaborn jupyterlab -c conda-forge -y
+(base) PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> conda activate End-to-End-Machine-Learning-Banking-Domain-Project
+(End-to-End-Machine-Learning-Banking-Domain-Project) PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project>jupyter lab
+
+// Download the CSV file for the project from this URL:
+// https://github.com/Shivan118/End-to-End-Machine-Learning-Banking-Domain-Project/blob/main/Bank%20Marketing.ipynb
+// Create the GitHub repository: End-to-End-Machine-Learning-Banking-Domain-Project
+// Create a .gitignore file:
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> New-Item -ItemType File .gitignore
+
+    Directory: C:\Users\m_uno\OneDrive\Digitaler Nomade\Web
+Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          17/11/2023    21:26              0 .gitignore
+// Set up the repository locally and remotely:
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git init
+Initialized empty Git repository in C:/Users/m_uno/OneDrive/Digitaler Nomade/Web Development/Python/ml/End-to-End-Machine-Learning-Banking-Domain-Project/.git/
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git remote add origin git@github.com:marcobejarano/End-to-End-Machine-Learning-Banking-Domain-Project.git
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git remote -v
+origin  git@github.com:marcobejarano/End-to-End-Machine-Learning-Banking-Domain-Project.git (fetch)
+origin  git@github.com:marcobejarano/End-to-End-Machine-Learning-Banking-Domain-Project.git (push)
+// Pull the files from the main repository (origin) in GitHub
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git pull origin main
+From github.com:marcobejarano/End-to-End-Machine-Learning-Banking-Domain-Project
+ * branch            main       -> FETCH_HEAD
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project>
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git branch
+* main
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git switch -c development
+Switched to a new branch 'development'
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git push origin development
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'development' on GitHub by visiting:
+remote:      https://github.com/marcobejarano/End-to-End-Machine-Learning-Banking-Domain-Project/pull/new/development
+remote:
+To github.com:marcobejarano/End-to-End-Machine-Learning-Banking-Domain-Project.git
+ * [new branch]      development -> development
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git add .
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git commit -m "Done the Bank Marketing project"
+PS C:\Users\m_uno\OneDrive\Digitaler Nomade\Web Development\Python\ml\End-to-End-Machine-Learning-Banking-Domain-Project> git push origin development
